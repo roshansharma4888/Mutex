@@ -1,14 +1,14 @@
 
-all:tls.asm.o tls.o
-	gcc $^ -o tls.out -lm
+all:xchg.asm.o xchg.o
+	gcc $^ -o xchg.out -lm
 	
-tls.o:tls.c
+xchg.o:xchg.c
 	gcc -c $< -o $@
 
-tls.asm.o:tls.asm		
+xchg.asm.o:xchg.asm		
 	nasm -f elf64 -g $< -o $@
 
 clean:
-	rm -fr tls.o
-	rm -fr tls.asm.o
-	rm -fr tls.out
+	rm -fr xchg.o
+	rm -fr xchg.asm.o
+	rm -fr xchg.out

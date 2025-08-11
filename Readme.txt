@@ -1,3 +1,3 @@
-tls.c --> tls.o
-tls.asm --> tls.asm.o
-tls.o + tls.asm.o --> tls.out
+xchg.c --> xchg.o
+xchg.asm --> xchg.asm.o
+xchg.o + xchg.asm.o --> xchg.out
